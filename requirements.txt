@@ -1,0 +1,47 @@
+# LLM Fine-Tuning Pipeline for Medical Equipment Support
+# Three-Stage Fine-Tuning: Domain Adaptation + SFT + DPO
+
+# ===== Core Deep Learning Framework =====
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# ===== Transformer Models & NLP =====
+transformers>=4.35.0
+datasets>=2.13.0
+tokenizers>=0.13.0
+
+# ===== Fine-Tuning Libraries =====
+unsloth[cu121]>=2024.01  # Optimized fine-tuning (CUDA 12.1)
+peft>=0.7.0              # Parameter-Efficient Fine-Tuning (LoRA)
+trl>=0.22.0              # Transformer Reinforcement Learning (DPO, SFT)
+
+# ===== Quantization & Optimization =====
+bitsandbytes>=0.41.0     # 8-bit optimizer and quantization
+xformers>=0.0.22         # Optimized attention mechanisms
+
+# ===== Data Processing =====
+pandas>=2.0.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+
+# ===== PDF & Document Processing =====
+pymupdf>=1.23.0          # PDF text extraction (fitz)
+pdfplumber>=0.9.0        # Alternative PDF processing
+
+# ===== Training & Distributed Computing =====
+accelerate>=0.24.0       # Distributed training utilities
+
+# ===== Data Handling & Utilities =====
+Pillow>=10.0.0           # Image processing
+
+# ===== Jupyter & Interactive Environments =====
+ipywidgets>=8.0.0        # Interactive widgets for Jupyter
+ipython>=8.0.0           # IPython environment
+jupyter>=1.0.0           # Jupyter notebook
+ipykernel>=6.20.0        # IPython kernel for Jupyter
+
+# ===== Optional: Utilities =====
+tqdm>=4.65.0             # Progress bars
+pyyaml>=6.0              # YAML configuration files
+python-dotenv>=1.0.0     # Environment variable management
